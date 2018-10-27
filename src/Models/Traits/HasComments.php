@@ -1,9 +1,7 @@
 <?php
-
 namespace Laravelfy\Commentable\Models\Traits;
 
 use Laravelfy\Commentable\Models\Comment;
-
 
 /**
  * 一个模型有评论

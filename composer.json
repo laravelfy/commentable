@@ -12,7 +12,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0",
-        "laravelfy/commentable-providers": "self.version"
+        "laravelfy/commentable-providers": "self.version",
+        "fzaninotto/faker": "^1.8"
     },
     "autoload": {
         "psr-4": {
