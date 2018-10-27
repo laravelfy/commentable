@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 /**
  * 可被评论的服务提供者
  */
-class CommentableServiceProvider extends IlluminateServiceProvider
+class ServiceProvider extends IlluminateServiceProvider
 {
     public function boot()
     {
