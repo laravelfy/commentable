@@ -1,17 +1,18 @@
 {
-    "name": "laravelfy/laravel-commentable",
+    "name": "laravelfy/commentable",
     "description": "Laravel 快速实现评论的功能",
     "type": "library",
     "license": "MIT",
     "authors": [{
-        "name": "xiaohui.lam",
+        "name": "xiaohui lam",
         "email": "xiaohui.lam@icloud.com"
     }],
     "require": {
         "laravel/framework": "5.7.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.0"
+        "phpunit/phpunit": "^7.0",
+        "laravelfy/commentable-providers": "self.version"
     },
     "autoload": {
         "psr-4": {
@@ -24,11 +25,10 @@
         }
     },
     "minimum-stability": "stable",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Laravelfy\\Commentable\\ServiceProvider"
-            ]
+    "repositories": {
+        "laravelfy/commentable-providers": {
+            "type": "vcs",
+            "url": "git@github.com:laravelfy/commentable-providers.git"
         }
     }
 }
