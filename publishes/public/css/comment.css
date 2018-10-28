@@ -1,0 +1,15 @@
+.comment>.media-body>p>.comment-reply-link {
+    visibility: hidden;
+}
+
+.comment:hover>.media-body>p>.comment-reply-link {
+    visibility: visible;
+}
+
+.comment>.media-body>.comment-content {
+    min-height: 2.8em;
+}
+
+.form-comment-create textarea {
+    min-height: 5em;
+}

@@ -30,5 +30,12 @@
             "type": "vcs",
             "url": "git@github.com:laravelfy/commentable-providers.git"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravelfy\\Commentable\\ServiceProviders\\ServiceProvider"
+            ]
+        }
     }
 }
