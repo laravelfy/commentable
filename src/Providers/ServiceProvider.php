@@ -12,6 +12,8 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../publishes/resources/views/comment/' => resource_path('views/comment/'),
+            __DIR__ . '/../publishes/public/' => public_path('vendor/commentable/'),
+            __DIR__ . '/../publishes/databases/' => database_path(),
         ], 'laravelfy-commentable');
     }
 }

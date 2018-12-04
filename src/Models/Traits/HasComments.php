@@ -6,12 +6,12 @@ use Laravelfy\Commentable\Models\Comment;
 /**
  * 一个模型有评论
  *
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Comment[] $comments
+ * @property-read \Illuminate\Database\Eloquent\Collection|Laravelfy\Commentable\Models\Comment[] $comments
  */
 trait HasComments
 {
     /**
-     * 附件
+     * 评论
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */

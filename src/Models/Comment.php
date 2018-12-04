@@ -3,7 +3,6 @@
 namespace Laravelfy\Commentable\Models;
 
 use Laravelfy\Commentable\Models\Traits\HasComments;
-use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -17,17 +16,14 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read User $user
- * @property-read Comment $refrence_comment
- * @property-read Bug|\Illuminate\Database\Eloquent\Model|\Eloquent $parent
- * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Attachment[] $attachments
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereContent($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereParentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereParentType($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereRefrenceCommentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Comment whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereContent($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereParentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereParentType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereRefrenceCommentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Laravelfy\Commentable\Models\Comment whereUserId($value)
  * @mixin \Eloquent
  */
 class Comment extends Model
